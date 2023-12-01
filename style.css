@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+  
+}
+body{
+  min-height: 100vh; 
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg,rgba(7, 1, 1, 0.811),rgba(11, 1, 1, 0.571)),url(./images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+ 
+}
+.header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  position: relative;
+}
+.header nav ul{
+ list-style: none;
+}
+.header nav ul li{
+display: inline-block;
+padding: 12px 20px;
+position: relative;
+}
+.header nav ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background-color: rgba(255, 255, 0, 0.621);
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 5px;
+transition: 1s;
+}.header nav ul li:hover::after{
+  width: 70%;
+}
+.header nav ul li a{
+color: rgba(255, 255, 255, 0.861);
+text-align: center;
+text-decoration: none;
+text-transform: capitalize;
+}
+.header nav .logo{
+  color: white;
+  padding-left: 10px;
+}
+.header nav .fa-bars{
+color: rgba(255, 255, 255, 0.861);
+  
+}
+.header nav .fa-times{
+  color: rgba(255, 255, 255, 0.861);
+
+}
+.header nav .fa{
+  display: none;
+}
+.header .text-box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  text-align: center;
+}
+.header .text-box h1{
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.548);
+}
+.header .text-box p{
+  
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.548);
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.header .text-box .text-box-btn{
+  display: block;
+  background: white;
+  width: 150px;
+  padding: 7px 0;
+  text-decoration: none;
+  color: rgb(114, 114, 5);
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid white;
+border-radius: 3px;
+  margin: 0 auto;
+  transition: .5s;
+}
+.header .text-box .text-box-btn:hover{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.header .text-box .text-box-btn .fa-arrow-right{
+margin-left: 10px;
+}
+/* ---about us -- */
+.about-us{
+  width: 90%;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+  
+}
+.about-us .about-us-title{
+text-align: center;
+margin-bottom: 50px;
+}
+.about-us .about-us-row{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+gap: 20px;
+}
+.about-us .about-us-row .about-us-col{
+height: fit-content;
+transition: .5s;
+
+}
+.about-us .about-us-row .about-us-col:hover{
+transform: translateY(-20px);
+
+}
+.about-us .about-us-row .about-us-col img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+
+}
+.about-us .about-us-row .about-us-col h3{
+line-height: 2;
+font-size: 20px;
+text-transform: capitalize;
+}
+.about-us .about-us-row .about-us-col p{
+ width: 100%;
+
+}
+/* ---team--- */
+.team{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+ .team .team-title{
+  margin-bottom: 50px;
+  text-align: center;
+ } 
+
+ .team .team-row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+gap: 20px;
+ }
+.team .team-row .team-member{
+
+  background-color:rgba(255, 255, 0, 0.621) ;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+  position: relative;
+  box-shadow: 6px 8px 10px gray;
+}
+.team .team-row .team-member .member-profile{
+  background-color:rgba(255, 255, 0, 0.621) ;
+  padding: 5px;
+
+}
+.team .team-row .team-member .member-profile img{
+object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
+  margin: 0 auto;
+  display: block;
+}
+.team .team-row .team-member .name{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+
+
+}
+.team .team-row .team-member .role{
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.team .member-social-media{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.team .member-social-media .fa-instagram{
+  font-size: 48px;
+  color: rgb(16, 201, 16);
+}
+.team .member-social-media .fa-facebook-square{
+  font-size: 48px;
+  color: rgb(16, 201, 16);
+
+
+}
+.team .member-social-media .fa-whatsapp{
+  font-size: 48px;
+  color: rgb(16, 201, 16);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+  .header nav ul li:hover::after{
+    width: 0;
+  }
+  .header nav .nav-links{
+    position: absolute;
+    top: 100%;
+    left: -200px;
+    z-index: 2;
+background-color: rgb(54, 54, 1);
+width: 200px;
+padding: 10px;
+transition: .5s;
+
+  }
+  .header nav ul li{
+    display: block;
+  }
+  .header nav .fa{
+    display: block;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .header .text-box h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.548);
+  }
+  .header .text-box p{
+    
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.548);
+    line-height: 1.5;
+  }
+
+}
