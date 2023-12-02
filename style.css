@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 html{
   font-size: 16px;
@@ -28,6 +29,8 @@ body{
   align-items: center;
   padding: 20px 10px;
   position: relative;
+  background-color: rgb(6, 95, 184);
+  color: rgba(255, 255, 255, 0.795);
 }
 .header nav ul{
  list-style: none;
@@ -93,22 +96,24 @@ color: rgba(255, 255, 255, 0.861);
 }
 .header .text-box .text-box-btn{
   display: block;
-  background: white;
   width: 150px;
   padding: 7px 0;
   text-decoration: none;
-  color: rgb(114, 114, 5);
+
   font-weight: 600;
   text-transform: capitalize;
-  border: 1px solid white;
+  border: 1px solid rgb(6, 95, 184);
 border-radius: 3px;
+background-color: transparent;
+color: white;
   margin: 0 auto;
   transition: .5s;
 }
 .header .text-box .text-box-btn:hover{
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid  rgb(6, 95, 184);
+  color: rgb(6, 95, 184);
+background: white;
+
 }
 .header .text-box .text-box-btn .fa-arrow-right{
 margin-left: 10px;
@@ -172,16 +177,20 @@ gap: 20px;
  }
 .team .team-row .team-member{
 
-  background-color:rgba(255, 255, 0, 0.621) ;
+  /* background-color:rgba(255, 255, 0, 0.621) ; */
   padding: 20px;
   width: 100%;
   text-align: center;
   height: fit-content;
   position: relative;
   box-shadow: 6px 8px 10px gray;
+  background-color: rgb(6, 95, 184);
+  color: rgba(255, 255, 255, 0.795);
+
 }
 .team .team-row .team-member .member-profile{
-  background-color:rgba(255, 255, 0, 0.621) ;
+  background-color: rgb(6, 95, 184);
+
   padding: 5px;
 
 }
@@ -214,17 +223,17 @@ object-fit: cover;
 
 .team .member-social-media .fa-instagram{
   font-size: 48px;
-  color: rgb(16, 201, 16);
+  color: white;
 }
 .team .member-social-media .fa-facebook-square{
   font-size: 48px;
-  color: rgb(16, 201, 16);
+  color: white;
 
 
 }
 .team .member-social-media .fa-whatsapp{
   font-size: 48px;
-  color: rgb(16, 201, 16);
+  color: white;
 
 
 
@@ -249,10 +258,15 @@ object-fit: cover;
     top: 100%;
     left: -200px;
     z-index: 2;
-background-color: rgb(54, 54, 1);
+/* background-color: rgb(54, 54, 1); */
+background-color: rgb(6, 95, 184);
+color: rgba(255, 255, 255, 0.795);
+margin-top: 2px;
+
 width: 200px;
 padding: 10px;
 transition: .5s;
+
 
   }
   .header nav ul li{
