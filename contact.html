@@ -18,27 +18,74 @@
   </head>
   <body>
     <header id="home">
-        <div class="fixed">
-            <nav>
-              <div class="logo"><a href="index.html">shakatech</a></div>
-    
-              <div class="nav-links" id="nav-links">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                  <li><a href="index.html" class="active">home</a></li>
-                  <li><a href="about.html">about</a></li>
-                  <li><a href="team.html">our team</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="contact.html">contact</a></li>
-                  <li><a href="signin.html">login</a></li>
-                </ul>
-              </div>
-    
-              <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
+      <div class="fixed">
+        <nav>
+          <div class="logo"><a href="index.html">shakatech</a></div>
+
+          <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html" class="active">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="team.html">our team</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="signin.html">login</a></li>
+            </ul>
           </div>
+
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      </div>
     </header>
-  
+    <div class="main">
+      <div class="center">
+        <div class="contact-content">
+          <h1>contact us</h1>
+          <p>what would you like us to help you or suggest us</p>
+        </div>
+
+        <form action="" class="form">
+          <div class="form-element">
+            <div class="label">
+              <label for="Name">Name</label>
+              <label for="error"></label>
+            </div>
+            <input type="email" name="email" id="email" class="form-input" />
+          </div>
+
+          <div class="form-element">
+            <div class="label">
+              <label for="address">Address</label>
+              <label for="error"></label>
+            </div>
+            <input type="text" name="email" id="email" class="form-input" />
+          </div>
+
+          <div class="form-element">
+            <div class="label">
+              <label for="Email">Email</label>
+              <label for="error"></label>
+            </div>
+            <input type="email" name="email" id="email" class="form-input" />
+          </div>
+          <div class="form-element">
+            <div class="label">
+              <label for="Email">Suggestion</label>
+              <label for="error"></label>
+            </div>
+            <textarea
+              name="suggestion"
+              id=""
+              cols="30"
+              rows="10"
+              class="form-input"
+            ></textarea>
+          </div>
+          <button type="submit" class="button">send</button>
+        </form>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="row">
