@@ -23,14 +23,13 @@ body{
   background-position: center;
   position: relative;
  
-}
-.header .fixed{
+} .fixed{
   position: fixed;
   width: 100%;
 z-index: 200;
 
 }
-.header nav{
+header nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,15 +40,15 @@ z-index: 200;
   z-index: 1;
   box-shadow: 5px 8px 10px gray,-5px -8px 10px white;
 }
-.header nav ul{
+ nav ul{
  list-style: none;
 }
-.header nav ul li{
+ nav ul li{
 display: inline-block;
 padding: 12px 20px;
 position: relative;
 }
-.header nav ul li::after{
+ nav ul li::after{
 content: '';
 width: 0%;
 height: 2px;
@@ -62,25 +61,25 @@ transition: 1s;
 }.header nav ul li:hover::after{
   width: 70%;
 }
-.header nav ul li a{
+nav ul li a{
 color: rgba(255, 255, 255, 0.861);
 text-align: center;
 text-decoration: none;
 text-transform: capitalize;
 }
-.header nav .logo{
+ nav .logo{
   color: white;
   padding-left: 10px;
 }
-.header nav .fa-bars{
+ nav .fa-bars{
 color: rgba(255, 255, 255, 0.861);
   
 }
-.header nav .fa-times{
+ nav .fa-times{
   color: rgba(255, 255, 255, 0.861);
 
 }
-.header nav .fa{
+ nav .fa{
   display: none;
 }
 .header .text-box{
@@ -401,14 +400,35 @@ font-size: 12px;
 
 }
 .footer .row .col ul li a i{ 
-
 margin-right: 10px;
 
 }
-.footer .row .col ul li a span{ 
+/* registration and login form */
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -418,10 +438,10 @@ margin-right: 10px;
 
 
 @media(max-width:700px){
-  .header nav ul li:hover::after{
+ nav ul li:hover::after{
     width: 0;
   }
-  .header nav .nav-links{
+ nav .nav-links{
     position: absolute;
     top: 100%;
     left: -200px;
@@ -437,10 +457,10 @@ transition: .5s;
 
 
   }
-  .header nav ul li{
+ nav ul li{
     display: block;
   }
-  .header nav .fa{
+ nav .fa{
     display: block;
     font-size: 20px;
     margin-left: 20px;
