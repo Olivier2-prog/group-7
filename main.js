@@ -1,5 +1,6 @@
-let link=document.getElementById('nav-links');
 
+
+let link=document.getElementById('nav-links');
 window.addEventListener('click',function(){
     link.style.left="-200px";
 },true);
@@ -11,4 +12,5 @@ function showMenu(){
 function hideMenu(){
     link.style.left="-200px";
 }
+
 
