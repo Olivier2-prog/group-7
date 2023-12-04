@@ -13,6 +13,7 @@ html{
 body{
   min-height: 100vh; 
   /* border: 1px solid; */
+  width: 100%;
 }
 
 .fixed{
@@ -34,6 +35,7 @@ header nav{
   color: rgba(255, 255, 255, 0.795);
   z-index: 1;
   box-shadow: 5px 8px 10px gray,-5px -8px 10px white;
+  width: 100%;
 }
  nav ul{
  list-style: none;
