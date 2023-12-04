@@ -104,6 +104,9 @@ color: rgba(255, 255, 255, 0.861);
   font-size: 30px;
   color: rgba(255, 255, 255, 0.548);
 }
+.header .text-box h1 span{
+color:rgb(6, 95, 184);
+}
 .header .text-box p{
   
   font-size: 16px;
